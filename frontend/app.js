@@ -109,8 +109,8 @@ document.getElementById("form-reserva").addEventListener("submit", async (e) => 
 document.getElementById("form-prestamo").addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const usuarioId = document.getElementById("prestamo-usuario-id").value;
-    const libroId = document.getElementById("prestamo-libro-id").value;
+    const usuarioId = document.getElementById("usuario-id").value;
+    const libroId = document.getElementById("libro-id").value;
     const fechaPrestamo = document.getElementById("fecha-prestamo").value;
 
     if (!usuarioId || !libroId || !fechaPrestamo) {
@@ -282,8 +282,8 @@ document.getElementById("form-reserva").addEventListener("submit", async (e) => 
 document.getElementById("form-prestamo").addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const usuarioId = document.getElementById("prestamo-usuario-id").value; // Corrección del ID
-    const libroId = document.getElementById("prestamo-libro-id").value;     // Corrección del ID
+    const usuarioId = document.getElementById("usuario-id").value; // Corrección del ID
+    const libroId = document.getElementById("libro-id").value;     // Corrección del ID
     const fechaPrestamo = document.getElementById("fecha-prestamo").value;
 
     try {
