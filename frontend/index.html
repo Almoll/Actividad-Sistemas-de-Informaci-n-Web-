@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Gestión de Biblioteca</h1>
+        <nav>
+            <button id="mostrar-login">Iniciar Sesión</button>
+            <button id="cargar-libros">Ver Libros</button>
+            <button id="cargar-prestamos">Ver Préstamos</button>
+            <button id="cargar-reservas">Ver Reservas</button>
+            <button id="mostrar-form-prestamo">Registrar Préstamo</button>
+            <button id="mostrar-form-reserva">Reservar Libro</button>
+            <button id="mostrar-form-registrar-libro">Añadir Libro</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Sección de inicio de sesión -->
+        <section id="seccion-login" class="section hidden">
+            <h2>Inicio de Sesión</h2>
+            <form id="form-login" class="form">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" required>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" required>
+
+                <button type="submit">Iniciar Sesión</button>
+                <p id="login-mensaje" class="message"></p>
+            </form>
+            <p>
+                ¿No tienes una cuenta? <button id="mostrar-registro" class="link-button">Regístrate aquí</button>
+            </p>
+        </section>
+        <!-- Sección de registro de usuario -->
+        <section id="seccion-registro" class="section hidden">
+            <h2>Registro de Usuario</h2>
+            <form id="form-registro" class="form">
+                <label for="registro-nombre">Nombre:</label>
+                <input type="text" id="registro-nombre" required>
+        
+                <label for="registro-correo">Correo Electrónico:</label>
+                <input type="email" id="registro-correo" required>
+        
+                <label for="registro-contrasena">Contraseña:</label>
+                <input type="password" id="registro-contrasena" required>
+        
+                <button type="submit">Crear Cuenta</button>
+                <p id="registro-mensaje" class="message"></p>
+            </form>
+        </section>
+
+        <!-- Sección para ver libros -->
+        <section id="seccion-libros" class="section hidden">
+            <h2>Listado de Libros</h2>
+            <div id="lista-libros" class="list"></div>
+        </section>
+
+        <!-- Sección para ver préstamos -->
+        <section id="seccion-prestamos" class="section hidden">
+            <h2>Préstamos Activos</h2>
+            <div id="lista-prestamos" class="list"></div>
+        </section>
+        <!-- Sección para ver reservas -->
+        <section id="seccion-reservas" class="section hidden">
+            <h2>Listado de Reservas</h2>
+            <div id="lista-reservas" class="list"></div>
+        </section>
+
+
+        <!-- Formulario para registrar préstamo -->
+        <section id="seccion-prestamo" class="section hidden">
+            <h2>Registrar Préstamo</h2>
+            <form id="form-prestamo" class="form">
+                <label for="prestamo-usuario-id">ID Usuario:</label>
+                <input type="text" id="usuario-id" required>
+
+                <label for="prestamo-libro-id">ID Libro:</label>
+                <input type="text" id="libro-id" required>
+
+                <label for="fecha-prestamo">Fecha de Préstamo:</label>
+                <input type="date" id="fecha-prestamo" required>
+
+                <button type="submit">Registrar</button>
+                <p id="resultado-prestamo" class="message"></p>
+            </form>
+        </section>
+
+        <!-- Formulario para reservar un libro -->
+        <section id="seccion-reserva" class="section hidden">
+            <h2>Reservar Libro</h2>
+            <form id="form-reserva" class="form">
+                <label for="reserva-usuario-id">ID Usuario:</label>
+                <input type="text" id="reserva-usuario-id" required>
+
+                <label for="reserva-libro-id">ID Libro:</label>
+                <input type="text" id="reserva-libro-id" required>
+
+                <label for="fecha-reserva">Fecha de Reserva:</label>
+                <input type="date" id="fecha-reserva" required>
+
+                <button type="submit">Reservar</button>
+                <p id="resultado-reserva" class="message"></p>
+            </form>
+        </section>
+        <!-- Formulario para añadir un libro -->
+        <section id="seccion-registrar-libro" class="section hidden">
+            <h2>Registrar Nuevo Libro</h2>
+            <form id="form-registrar-libro" class="form">
+                <label for="titulo-libro">Título:</label>
+                <input type="text" id="titulo-libro" required>
+        
+                <label for="autor-libro">Autor:</label>
+                <input type="text" id="autor-libro" required>
+        
+                <label for="isbn-libro">ISBN:</label>
+                <input type="text" id="isbn-libro" required>
+        
+                <button type="submit">Registrar Libro</button>
+                <p id="mensaje-registrar-libro" class="message"></p>
+            </form>
+        </section>
+    </main>
+</body>
+<script src="app.js"></script>
+</html>

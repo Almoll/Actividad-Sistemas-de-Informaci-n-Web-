@@ -1,0 +1,129 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #18531a;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header nav button {
+    background-color: #ffffff;
+    color: #1a5a1d;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header nav button:hover {
+    background-color: #155f19;
+    color: white;
+}
+
+/* Container */
+.container {
+    padding: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Sections */
+.section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section.hidden {
+    display: none;
+}
+
+.section h2 {
+    color: #4CAF50;
+}
+
+/* Lists */
+.list {
+    margin: 1rem 0;
+}
+
+.list div {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+
+/* Forms */
+.form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+.form input, .form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #45a049;
+}
+
+/* Messages */
+.message {
+    margin-top: 1rem;
+    color: #4CAF50;
+    font-weight: bold;
+    text-align: center;
+}
+.message {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.message.success {
+    color: green;
+}
+
+.message.error {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+.reserva-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.reserva-item p {
+    margin: 5px 0;
+}
